@@ -95,6 +95,7 @@ public class UserServiceImpl implements UserService {
      * @return true已登录  false未登录
      */
     public RequestResult checkToken(String token){
+        System.out.println("service:checktoken"+token);
         RequestResult result = new RequestResult();
         //查询token是否存在
         String json = jedisClient.get(token+":token");
@@ -107,6 +108,7 @@ public class UserServiceImpl implements UserService {
             jedisClient.expire(token+":token",15*60);
             result.setStatus(200);
             result.setData(JsonUtils.jsonToPojo(json, TbUser.class));
+            System.out.println("service:checktoken"+result.getStatus());
             return result;
         }
     }

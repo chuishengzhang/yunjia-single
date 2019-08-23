@@ -77,7 +77,7 @@ public class PortalController {
 	 * @param callback 回调函数
 	 * @return jsonp js片段
 	 */
-	@RequestMapping(value="/portal/cat/list",method=RequestMethod.GET/*,produces=MediaType.APPLICATION_JSON_UTF8_VALUE*/)
+	@RequestMapping(value="/portal/cat/list",method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON_VALUE+";charset=utf-8")
 	@ResponseBody
 	public String getPortalCatList(@RequestParam("callback") String callback){
 		PortalCatResult result = itemCatService.getItemCatList();

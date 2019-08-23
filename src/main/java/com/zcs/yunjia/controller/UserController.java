@@ -54,10 +54,11 @@ public class UserController {
 
     @RequestMapping("/check/{token}")
     @ResponseBody
-    public String checkToken(@PathVariable String token,@RequestParam String callback){
+    public String checkToken(@PathVariable String token){
         String json = JsonUtils.objectToJson(userService.checkToken(token));
-        String jsonp = callback+"("+json+")";
-        return jsonp;
+        //String jsonp = callback+"("+json+")";
+        System.out.println("controller:checktoken"+token);
+        return json;
     }
 
     @RequestMapping("/user/register")

@@ -376,5 +376,6 @@ pageConfig.DATA_Tabs = {"1615":{"1":{"d":"g15\/M00\/13\/1E\/rBEhWFJ4sNUIAAAAAAHJ
 <!-- footer end -->
  
 <script type="text/javascript" src="/js/home.js" charset="utf-8"></script>
+<script type="application/javascript" src="../js/taotao.js" />
 </body>
 </html>

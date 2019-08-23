@@ -15,7 +15,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring/applicationContext-*.xml</param-value>
     </context-param>
-	<!--&lt;!&ndash; 解决post乱码 &ndash;&gt;
+	<!--解决post乱码 -->
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -27,7 +27,7 @@
 	<filter-mapping>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/</url-pattern>
-	</filter-mapping>-->
+	</filter-mapping>
 
 
 	<!-- springmvc的前端控制器 -->
