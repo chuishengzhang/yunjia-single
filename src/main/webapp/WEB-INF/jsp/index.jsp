@@ -47,7 +47,7 @@
     	var first = pageConfig.FN_GetCompatibleData( cfg.DATA_MSlide[0] );
         var TPL = ''
             +'<ul class="slide-items">'
-            +'<li clstag="homepage|keycount|home2013|09a1">'
+				+'<li clstag="homepage|keycount|home2013|09a1">'
             +'<a href="'+ first.href +'" target="_blank" title="'+ first.alt +'">'
             +'<img src="'+ first.src +'" width="'+ first.width +'" height="'+ first.height +'" >'
             +'</a>'
@@ -376,6 +376,5 @@ pageConfig.DATA_Tabs = {"1615":{"1":{"d":"g15\/M00\/13\/1E\/rBEhWFJ4sNUIAAAAAAHJ
 <!-- footer end -->
  
 <script type="text/javascript" src="/js/home.js" charset="utf-8"></script>
-<script type="application/javascript" src="../js/taotao.js" />
 </body>
 </html>

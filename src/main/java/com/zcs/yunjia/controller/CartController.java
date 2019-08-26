@@ -15,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
@@ -146,7 +147,10 @@ public class CartController {
                 cartList.add(cartItem);
             }
             //把购物车写到客户端
-            CookieUtils.setCookie(request,response,"cartList",JsonUtils.objectToJson(cartList));
+            //CookieUtils.setCookie(request,response,"cartList",JsonUtils.objectToJson(cartList));
+            Cookie cartListCookie = new Cookie("cartList",JsonUtils.objectToJson(cartList));
+            cartListCookie.setPath("/");
+            response.addCookie(cartListCookie);
             //展示购物车
             model.addAttribute("cartList",cartList);
         }

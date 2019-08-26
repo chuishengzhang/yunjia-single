@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
@@ -40,8 +41,12 @@ public class UserController {
     @ResponseBody
     public LoginResult validateUser(HttpServletRequest request, HttpServletResponse response, @RequestParam String username, @RequestParam String password){
         LoginResult result = userService.login(username,password);
+        response.setHeader("Access-Control-Allow-Credentials","true");
         if(result.getMsg() != "") {
-            CookieUtils.setCookie(request, response, "userToken", result.getMsg());
+            //CookieUtils.setCookie(request, response, "userToken", result.getMsg());
+            Cookie cookie = new Cookie("userToken",result.getMsg());
+            cookie.setPath("/");
+            response.addCookie(cookie);
         }
         return result;
     }
