@@ -22,8 +22,9 @@ public class PageController {
 	// 显示各个子页 将请求路径当作参数放回
 	// 请求item-list 返回item-list
 	// 请求item-add 返回item-add
-	@RequestMapping(value={"/{page}","/rest/page/{page}"})
+	@RequestMapping(value={"/yunjia/manager/{page}","/rest/page/{page}"})
 	public String showPage(@PathVariable String page) {
+		System.out.println("/yunjia/page");
 		return "manager/"+page;
 	}
 }

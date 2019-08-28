@@ -10,6 +10,7 @@
 <meta name="description" content="韵家JD.COM-专业的综合网上购物商城，在线销售智能家电数万个品牌千万种优质商品。便捷、诚信的服务，为您提供愉悦的网上商城购物体验! ">
 <meta name="Keywords" content="网上购物,智能家电,韵家商城">
 <link href="/css/taotao.css" rel="stylesheet"/>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <script type="text/javascript">
 	window.pageConfig={
 	compatible:true,

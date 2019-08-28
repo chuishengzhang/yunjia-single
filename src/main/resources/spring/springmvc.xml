@@ -40,6 +40,9 @@
 	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"></mvc:resources>
 	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"></mvc:resources>
 	<mvc:resources location="/WEB-INF/images/" mapping="/images/**"></mvc:resources>
+	<mvc:resources location="/WEB-INF/js/" mapping="/yunjia/js/**"></mvc:resources>
+	<mvc:resources location="/WEB-INF/css/" mapping="/yunjia/css/**"></mvc:resources>
+	<mvc:resources location="/WEB-INF/images/" mapping="/yunjia/images/**"></mvc:resources>
 
 	<!-- solrj客户端 -->
 	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">

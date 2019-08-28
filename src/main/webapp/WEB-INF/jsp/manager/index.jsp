@@ -23,22 +23,22 @@
          	<li>
          		<span>商品管理</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'item-add'}">新增商品</li>
-	         		<li data-options="attributes:{'url':'item-list'}">查询商品</li>
-	         		<li data-options="attributes:{'url':'item-param-list'}">规格参数</li>
+	         		<li data-options="attributes:{'url':'manager/item-add'}">新增商品</li>
+	         		<li data-options="attributes:{'url':'manager/item-list'}">查询商品</li>
+	         		<li data-options="attributes:{'url':'manager/item-param-list'}">规格参数</li>
 	         	</ul>
          	</li>
          	<li>
          		<span>网站内容管理</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'content-category'}">内容分类管理</li>
-	         		<li data-options="attributes:{'url':'content'}">内容管理</li>
+	         		<li data-options="attributes:{'url':'manager/content-category'}">内容分类管理</li>
+	         		<li data-options="attributes:{'url':'manager/content'}">内容管理</li>
 	         	</ul>
          	</li>
          	<li>
          		<span>Solr</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'solr-core'}">Solr索引库管理</li>
+	         		<li data-options="attributes:{'url':'manager/solr-core'}">Solr索引库管理</li>
 	         	</ul>
          	</li>
          </ul>
